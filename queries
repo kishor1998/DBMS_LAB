@@ -1,0 +1,5 @@
+1) To retrieve details of all books in the library including id,title,name of publisher,author name, no. of copies in each branch.
+SOLUTION: select b.b_id,b.title,b.publisher_name,ba.author_name,bc.nO_of_copies,bc.branch_id from BOOK b,BOOK_AUTHOR ba,BOOK_COPIES bc where b.b_id=ba.b_id AND bc.b_id=b.b_id;
+
+Empty set (0.00 sec)
+
